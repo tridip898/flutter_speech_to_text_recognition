@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:speech_recognation_app/home_page.dart';
 import 'package:speech_recognation_app/search_page.dart';
+import 'package:speech_recognation_app/timeline_tile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: '/search',
+          initialRoute: '/timeline',
           getPages: [
             GetPage(
               name: '/home',
@@ -29,6 +30,10 @@ class MyApp extends StatelessWidget {
             GetPage(
               name: '/search',
               page: () => SearchPage(),
+            ),
+            GetPage(
+              name: '/timeline',
+              page: () => TimelineTilePage(),
             )
           ],
         );

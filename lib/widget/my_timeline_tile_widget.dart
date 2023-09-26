@@ -21,7 +21,8 @@ class MyTimelineTile extends StatelessWidget {
         isFirst: isFirst,
         isLast: isLast,
         beforeLineStyle: LineStyle(
-            color: isPast ? Colors.pinkAccent : Colors.pinkAccent.shade100),
+          color: isPast ? Colors.pinkAccent : Colors.pinkAccent.shade100,
+        ),
         indicatorStyle: IndicatorStyle(
           color: isPast ? Colors.pinkAccent : Colors.pinkAccent.shade100,
           width: 30,
@@ -31,12 +32,11 @@ class MyTimelineTile extends StatelessWidget {
           ),
         ),
         endChild: Container(
-          padding: EdgeInsets.symmetric(horizontal: 30.w,vertical: 20.h),
-          margin: EdgeInsets.symmetric(horizontal:10.w),
+          padding: EdgeInsets.symmetric(horizontal: 30.w, vertical: 20.h),
+          margin: EdgeInsets.symmetric(horizontal: 10.w),
           decoration: BoxDecoration(
-            color:  isPast ? Colors.pinkAccent : Colors.pinkAccent.shade100,
-            borderRadius: BorderRadius.circular(10)
-          ),
+              color: isPast ? Colors.pinkAccent : Colors.pinkAccent.shade100,
+              borderRadius: BorderRadius.circular(10)),
           child: Text("data"),
         ),
       ),
